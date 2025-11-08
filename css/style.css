@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+
+:root {
+  --bg: #fff8f0;
+  --text: #4b3621;
+  --accent: #8b4513;
+  --light: #d2b48c;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  transition: background 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--light);
+  padding: 15px 0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(139, 69, 19, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeIn 1s ease forwards;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.nav a:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.lang-switch {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  border-radius: 10px;
+  border: none;
+  background: var(--bg);
+  color: var(--text);
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 2px 6px rgba(139, 69, 19, 0.2);
+  transition: 0.3s ease;
+}
+
+.lang-switch:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.section {
+  padding: 60px 0;
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+.section h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+footer {
+  background: var(--light);
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 10px rgba(139, 69, 19, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === ПРОЕКТЫ === */
+.projects {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f5efe6; /* бежевый фон */
+}
+
+.projects h2 {
+  color: #5a3825;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.project-card {
+  background: #fffaf3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(90, 56, 37, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.project-card .lang-tag {
+  display: block;
+  background-color: #cbb18a;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(90, 56, 37, 0.25);
+}
+
+
+/* === контакты === */
+.contact {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #f5efe6;
+}
+
+.contact h2 {
+  color: #5a3825;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: #e6d5c3;
+  color: #5a3825;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.email-link:hover {
+  background-color: #cbb18a;
+}
+
+.insta-link {
+  background: linear-gradient(45deg, #C13584, #E1306C, #F56040, #FCAF45);
+  color: #fff;
+}
+
+.insta-link:hover {
+  filter: brightness(1.1);
+  transform: scale(1.08);
+}
+
+.insta-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* === СЕРТИФИКАТЫ === */
+.certificates {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #fdf6ef; /* мягкий светлый беж */
+}
+
+.certificates h2 {
+  color: #5a3825;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.certificate-card {
+  background: #fffaf3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(90, 56, 37, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.certificate-card .cert-name {
+  display: block;
+  background-color: #cbb18a;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(90, 56, 37, 0.25);
+}
+
+.skills-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.skill { width: 250px; text-align: left; }
+.skill-bar { width: 100%; background: #e6d5c3; height: 15px; border-radius: 10px; overflow: hidden; margin-top: 5px; }
+.skill-level { height: 100%; background: var(--accent); border-radius: 10px; }

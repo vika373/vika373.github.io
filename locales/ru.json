@@ -1,0 +1,28 @@
+{
+  "header": { "title": "Портфолио Vika373" },
+  "nav": {
+    "about": "Обо мне",
+    "certificates": "Мои сертификаты",
+    "skills": "Мои навыки",
+    "projects": "Проекты",
+    "contact": "Контакты"
+  },
+  "about": {
+    "title": "Обо мне",
+    "text": "Привет! Я Вика — фронтенд-разработчик и UI-дизайнер с чувством стиля."
+  },
+  "certificates":{
+    "title": "Мои сертификаты"
+  },
+
+  "skills":{
+    "title": "Мои навыки"
+  },
+  "projects": {
+    "title": "Мои проекты"
+  },
+  "contact": {
+    "title": "Контакты",
+    "email": "Email: vika373@example.com"
+  }
+}

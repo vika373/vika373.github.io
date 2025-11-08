@@ -1,0 +1,125 @@
+  <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vika373 | Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <!-- === HEADER === -->
+    <header class="header">
+      <div class="container">
+        <h1 data-i18n="header.title">Портфолио Vika373</h1>
+        <nav class="nav">
+          <a href="#about" data-i18n="nav.about">Обо мне</a>
+          <a href="#certificates" data-i18n="nav.certificates">Сертификаты</a>
+          <a href="#skills" data-i18n="nav.skills">Навыки</a>
+          <a href="#projects" data-i18n="nav.projects">Проекты</a>
+          <a href="#contact" data-i18n="nav.contact">Контакты</a>
+        </nav>
+
+        <select id="languageSwitcher" class="lang-switch">
+          <option value="ru">RU</option>
+          <option value="en">EN</option>
+          <option value="kk">KK</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- === MAIN === -->
+    <main>
+      <section id="about" class="section">
+        <h2 data-i18n="about.title">Обо мне</h2>
+        <p data-i18n="about.text">Привет! Я Вика — фронтенд-разработчик и дизайнер.</p>
+      </section>
+
+      <section id="certificates" class="certificates section">
+    <h2 data-i18n="certificates.title">Мои сертификаты</h2>
+    <div class="certificates-grid">
+      <a href="images/course_440_certificate_ru (2).pdf" target="_blank" class="certificate-card">
+        <img src="images/course_440_certificate_ru (2)_page-0001.jpg" alt="Certificate 1">
+        
+      </a>
+
+      <a href="images/course_520_certificate_ru.pdf" target="_blank" class="certificate-card">
+        <img src="images/course_520_certificate_ru_page-0001.jpg" alt="Certificate 2">
+        
+      </a>
+
+      <a href="images/course_444_certificate_ru (1).pdf" target="_blank" class="certificate-card">
+        <img src="images/course_444_certificate_ru (1)_page-0001.jpg" alt="Certificate 3">
+        
+      </a>
+    </div>
+  </section>
+
+  <section id="skills" class="skills section">
+  <h2 data-i18n="skills.title">Мои навыки</h2>
+  <div class="skills-grid">
+    <div class="skill">
+      <span>HTML / CSS</span>
+      <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>Figma / UI Design</span>
+      <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+    </div>
+  </div>
+</section>
+
+
+      <section id="projects" class="projects">
+    <h2 data-i18n="projects.title">Мои проекты</h2>
+    <div class="projects-grid">
+      <a href="https://github.com/vika373/07.02/tree/main" target="_blank" class="project-card">
+        <img src="images/project1.png" alt="Project 1">
+        <span class="lang-tag">HTML / CSS</span>
+      </a>
+
+      <a href="https://github.com/vika373/timer/tree/main" target="_blank" class="project-card">
+        <img src="images/project2.png" alt="Project 2">
+        <span class="lang-tag">JavaScript</span>
+      </a>
+
+      <a href="https://github.com/vika373/06.02-cliker/tree/main" target="_blank" class="project-card">
+        <img src="images/project3.png" alt="Project 3">
+        <span class="lang-tag">JavaScript</span>
+      </a>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <h2 data-i18n="contact.title">Связаться со мной</h2>
+
+    <div class="contact-links">
+      <a href="mailto:vikaobycnaa716@gmail.com" class="contact-btn email-link">
+        📧 vikaobycnaa716@gmail.com
+      </a>
+
+      <a href="https://www.instagram.com/hyukassss?igsh=NGg4NTRnN2hzbDFq" target="_blank" class="contact-btn insta-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="insta-icon">
+            <path fill="currentColor" d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm0,0A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.46-30.46C299.09,122.66,224,120,224,120s-75.09,2.66-94.25,11.21A54,54,0,0,0,99.29,161.7C90.74,180.91,88,256,88,256s2.66,75.09,11.21,94.25a54,54,0,0,0,30.46,30.46C148.91,394.74,224,397.33,224,397.33s75.09-2.59,94.25-11.14a54,54,0,0,0,30.46-30.46C357.26,331.09,360,256,360,256S357.33,180.91,348.71,161.7ZM224,338.67A82.67,82.67,0,1,1,306.67,256,82.75,82.75,0,0,1,224,338.67Zm85.33-148A19.2,19.2,0,1,1,328.5,171,19.21,19.21,0,0,1,309.33,190.67Z"/>
+          </svg>
+          Instagram
+        </a>
+      </div>
+    </section>
+
+
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="footer">
+      <p>© 2025 Vika373</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>

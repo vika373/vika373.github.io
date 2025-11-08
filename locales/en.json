@@ -1,0 +1,27 @@
+{
+  "header": { "title": "Vika373 Portfolio" },
+  "nav": {
+  "about": "About Me",
+  "certificates": "My Certificates",
+  "skills": "My Skills",
+  "projects": "Projects",
+  "contact": "Contacts"
+  },
+  "about": {
+    "title": "About Me",
+    "text": "Hi! I'm Vika — a frontend developer and designer who loves cozy interfaces."
+  },
+  "certificates":{
+    "title": "My certificates"
+  },
+    "skills":{
+    "title": "My skill"
+  },
+  "projects": {
+    "title": "My Projects"
+  },
+  "contact": {
+    "title": "Сontact me",
+    "email": "Email: vika373@example.com"
+  }
+}
